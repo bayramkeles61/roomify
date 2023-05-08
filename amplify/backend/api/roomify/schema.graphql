@@ -1,0 +1,29 @@
+type Booking @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String
+  start_time: AWSTimestamp!
+  end_time: AWSTimestamp!
+  userID: ID! @index(name: "byUser")
+}
+
+type Device @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String
+  status: String
+  userID: ID! @index(name: "byUser")
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  email: String!
+  username: String
+  image: String
+  website: AWSURL
+  bio: String
+  nofDevices: Int!
+  Devices: [Device] @hasMany(indexName: "byUser", fields: ["id"])
+  Bookings: [Booking] @hasMany(indexName: "byUser", fields: ["id"])
+}

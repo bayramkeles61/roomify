@@ -12,10 +12,10 @@ type EagerBooking = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly start_time?: string | null;
-  readonly end_time?: string | null;
-  readonly status?: string | null;
-  readonly deviceID: string;
+  readonly name: string;
+  readonly description?: string | null;
+  readonly start_time: number;
+  readonly end_time: number;
   readonly userID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
@@ -27,10 +27,10 @@ type LazyBooking = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly start_time?: string | null;
-  readonly end_time?: string | null;
-  readonly status?: string | null;
-  readonly deviceID: string;
+  readonly name: string;
+  readonly description?: string | null;
+  readonly start_time: number;
+  readonly end_time: number;
   readonly userID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
@@ -48,11 +48,10 @@ type EagerDevice = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly name?: string | null;
+  readonly name: string;
   readonly description?: string | null;
-  readonly untitledfield?: string | null;
+  readonly status?: string | null;
   readonly userID: string;
-  readonly Bookings?: (Booking | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -63,11 +62,10 @@ type LazyDevice = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly name?: string | null;
+  readonly name: string;
   readonly description?: string | null;
-  readonly untitledfield?: string | null;
+  readonly status?: string | null;
   readonly userID: string;
-  readonly Bookings: AsyncCollection<Booking>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

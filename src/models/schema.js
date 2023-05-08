@@ -10,31 +10,31 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "start_time": {
-                    "name": "start_time",
+                "name": {
+                    "name": "name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "description": {
+                    "name": "description",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
+                    "attributes": []
+                },
+                "start_time": {
+                    "name": "start_time",
+                    "isArray": false,
+                    "type": "AWSTimestamp",
+                    "isRequired": true,
                     "attributes": []
                 },
                 "end_time": {
                     "name": "end_time",
                     "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "status": {
-                    "name": "status",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "deviceID": {
-                    "name": "deviceID",
-                    "isArray": false,
-                    "type": "ID",
+                    "type": "AWSTimestamp",
                     "isRequired": true,
                     "attributes": []
                 },
@@ -68,15 +68,6 @@ export const schema = {
                 {
                     "type": "model",
                     "properties": {}
-                },
-                {
-                    "type": "key",
-                    "properties": {
-                        "name": "byDevice",
-                        "fields": [
-                            "deviceID"
-                        ]
-                    }
                 },
                 {
                     "type": "key",
@@ -119,7 +110,7 @@ export const schema = {
                     "name": "name",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": false,
+                    "isRequired": true,
                     "attributes": []
                 },
                 "description": {
@@ -129,8 +120,8 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "untitledfield": {
-                    "name": "untitledfield",
+                "status": {
+                    "name": "status",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -142,22 +133,6 @@ export const schema = {
                     "type": "ID",
                     "isRequired": true,
                     "attributes": []
-                },
-                "Bookings": {
-                    "name": "Bookings",
-                    "isArray": true,
-                    "type": {
-                        "model": "Booking"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "deviceID"
-                        ]
-                    }
                 },
                 "createdAt": {
                     "name": "createdAt",
@@ -347,5 +322,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.4.2",
-    "version": "b48608ab65468091220584f33d39a940"
+    "version": "f5e816019efc725cddd86be6e5c6249f"
 };
