@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "user_id": "user-1",
+        "room_id": "room-1",
+        "title": "Product Roadmap Q4",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "2",
+        "user_id": "user-2",
+        "room_id": "room-1",
+        "title": "2020 Vision Meet",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "3",
+        "user_id": "user-3",
+        "room_id": "room-1",
+        "title": "Seminar on Growth and Expansion",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "4",
+        "user_id": "user-4",
+        "room_id": "room-1",
+        "title": "Weekly Tech Review",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "5",
+        "user_id": "user-5",
+        "room_id": "room-1",
+        "title": "Product Roadmap Q4",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "62",
+        "user_id": "user-6",
+        "room_id": "room-1",
+        "title": "2020 Vision Meet",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "7",
+        "user_id": "user-7",
+        "room_id": "room-1",
+        "title": "Seminar on Growth and Expansion",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    },
+    {
+        "id": "8",
+        "user_id": "user-8",
+        "room_id": "room-1",
+        "title": "Weekly Tech Review",
+        "start_date": 1682936631,
+        "end_date": 1682943831,
+        "price": null
+    }
+]
