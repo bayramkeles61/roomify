@@ -421,6 +421,8 @@ PODS:
     - React-Core
   - RNCAsyncStorage (1.18.1):
     - React-Core
+  - RNDeviceInfo (10.6.0):
+    - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -489,6 +491,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNAWSCognito (from `../node_modules/amazon-cognito-identity-js`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -584,6 +587,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/amazon-cognito-identity-js"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -638,6 +643,7 @@ SPEC CHECKSUMS:
   ReactCommon: dbfbe2f7f3c5ce4ce44f43f2fd0d5950d1eb67c5
   RNAWSCognito: 100c2a1e21010f4e201d8ac43deb400b8d5e7ba6
   RNCAsyncStorage: b90b71f45b8b97be43bc4284e71a6af48ac9f547
+  RNDeviceInfo: 475a4c447168d0ad4c807e48ef5e0963a0f4eb1b
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: d56980c8914db0b51692f55533409e844b66133c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
